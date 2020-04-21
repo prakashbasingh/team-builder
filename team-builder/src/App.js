@@ -45,18 +45,18 @@ const [teamMembers, setTeamMembers] = useState(initialTeamMembersList)
 const[formValues, setFormValues] = useState(initialFormValues)
 
 const onInputChange = evt => {
-  
+
 }
 
   return (
     <div className="App">
       
-      {/* <Form
+      <Form
         values={formValues}
         onInputChange={onInputChange}
         onCheckboxChange={onCheckboxChange}
         onSubmit={onSubmit}
-      /> */}
+      />
     </div>
   );
 }

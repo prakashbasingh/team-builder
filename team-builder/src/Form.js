@@ -52,35 +52,35 @@ function Form (props){
             <label>
                 <input
                     checked = {values.education.WebDev}
-                    onChange={onCheckboxChange}
+                    onChange={onCheckBoxChange}
                     name='WebDev'
                     type='checkbox' /> WebDev </label>
             <label>
                 <input
                     checked = {values.education.iosDev}
-                    onChange={onCheckboxChange}
+                    onChange={onCheckBoxChange}
                     name='iosDev'
                     type='checkbox' /> iosDev </label>
             <label>
                 <input
                     checked = {values.education.dataScience}
-                    onChange={onCheckboxChange}
+                    onChange={onCheckBoxChange}
                     name='dataScience'
                     type='checkbox' /> Data Science </label>
             <label>
                 <input
                     checked = {values.education.associateDegree}
-                    onChange={onCheckboxChange}
+                    onChange={onCheckBoxChange}
                     name='associateDegree'
                     type='checkbox' /> Associate Degree </label>
             <label>
                 <input
                     checked = {values.education.bachelorDegree}
-                    onChange={onCheckboxChange}
+                    onChange={onCheckBoxChange}
                     name='bachelorDegree'
                     type='checkbox' /> Bachelor Degree </label>
 
-            {/* the following is for button which needs a handeler */}
+            {/* the following is for button which needs a handler */}
             <button onClick = {onSubmit}> Submit </button>    
         </form>
     )

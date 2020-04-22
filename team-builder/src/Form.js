@@ -10,12 +10,12 @@ function Form (props){
     } = props
 
     return (
-        <form className = 'memberContainer'>
-            <h2>Team Member Form</h2>
+        <form className = 'member-form'>
+            <h2>Member Form</h2>
             {/* these three for text input for username, address, and email */}
             <label> Username: &nbsp;
                 <input
-                    value = {value.name}
+                    value = {values.username}
                     onChange = {onInputChange}
                     name = 'username'
                     type = 'text'
@@ -23,7 +23,7 @@ function Form (props){
             </label>
             <label> Email: &nbsp;
                 <input
-                    value = {value.email}
+                    value = {values.email}
                     onChange = {onInputChange}
                     name = 'email'
                     type = 'text'
@@ -31,7 +31,7 @@ function Form (props){
             </label>
             <label> Address: &nbsp;
                 <input
-                    value = {value.address}
+                    value = {values.address}
                     onChange = {onInputChange}
                     name = 'address'
                     type = 'text'
@@ -40,7 +40,7 @@ function Form (props){
             {/* this is for dropdown */}
             <label>Civil Status: &nbsp;
                 <select
-                    value = {value.civil}
+                    value = {values.civil}
                     onChange = {onInputChange}
                     name = 'civil'
                         >
@@ -51,31 +51,31 @@ function Form (props){
             {/* following is for checkbox  */}
             <label>
                 <input
-                    checked = {values.education.WebDev}
+                    checked = {values.educations.webDev}
                     onChange={onCheckBoxChange}
-                    name='WebDev'
+                    name='webDev'
                     type='checkbox' /> WebDev </label>
             <label>
                 <input
-                    checked = {values.education.iosDev}
+                    checked = {values.educations.iosDev}
                     onChange={onCheckBoxChange}
                     name='iosDev'
                     type='checkbox' /> iosDev </label>
             <label>
                 <input
-                    checked = {values.education.dataScience}
+                    checked = {values.educations.dataScience}
                     onChange={onCheckBoxChange}
                     name='dataScience'
                     type='checkbox' /> Data Science </label>
             <label>
                 <input
-                    checked = {values.education.associateDegree}
+                    checked = {values.educations.associateDegree}
                     onChange={onCheckBoxChange}
                     name='associateDegree'
                     type='checkbox' /> Associate Degree </label>
             <label>
                 <input
-                    checked = {values.education.bachelorDegree}
+                    checked = {values.educations.bachelorDegree}
                     onChange={onCheckBoxChange}
                     name='bachelorDegree'
                     type='checkbox' /> Bachelor Degree </label>
@@ -85,3 +85,5 @@ function Form (props){
         </form>
     )
 }
+
+export default Form
